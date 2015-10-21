@@ -1,0 +1,49 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscription</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/inscription.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+      
+        <h1>S'inscrire</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Vos informations de base</legend>
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="user_password">
+          
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Moins de 19</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">19 ou plus </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Votre profil</legend>
+          <label for="bio">biographie:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset>
+        
+        
+          <label>Intérêts:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Developpement</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          
+        
+        </fieldset>
+        <button type="submit">S'inscrire</button>
+      </form>
+      
+    </body>
+</html>
